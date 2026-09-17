@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #172554, #2563eb);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-app {
+  width: min(90%, 500px);
+  padding: 30px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 5px;
+  font-size: 2.5rem;
+}
+
+.subtitle {
+  margin-top: 0;
+  opacity: 0.8;
+}
+
+.search-area {
+  display: flex;
+  gap: 10px;
+  margin: 25px 0;
+}
+
+select,
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+select {
+  flex: 1;
+}
+
+button {
+  background: #facc15;
+  color: #172554;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #fde047;
+}
+
+.weather-card {
+  padding: 25px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+}
+
+.location-section h2 {
+  margin-bottom: 5px;
+}
+
+#weather-main {
+  text-transform: capitalize;
+  opacity: 0.85;
+}
+
+#weather-icon {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.temperature {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 10px 0 25px;
+}
+
+.weather-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.weather-details div {
+  padding: 15px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.weather-details span {
+  display: block;
+  font-size: 0.85rem;
+  opacity: 0.75;
+  margin-bottom: 5px;
+}
+
+.weather-details strong {
+  font-size: 1.1rem;
+}
